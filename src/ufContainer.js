@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 
 const ufContainer = () => {
-  const [value, setValue] = useState(0);
+  const [val, setVal] = useState(0);
+  const [number, setNumber] = useState(0);
 
   useEffect(() => {
     fetch('https://mindicador.cl/api/uf')
@@ -13,11 +14,21 @@ const ufContainer = () => {
       })
       .then(responseJson => {
         let ufToday = responseJson.serie[0].valor;
-        return setValue(ufToday);
+        return setVal(ufToday);
       });
-  }, [value]);
+  }, []);
 
-  return <h1>{value}</h1>;
+  const handleSubmit = e => {};
+
+  return (
+    <Fragment>
+      <form onChange={handleSubmit}>
+        <label style={{ marginRight: '2rem' }}>Calculadora UF</label>
+        <input type="text" onChange={e => setNumber(e.target.value * val)} />
+      </form>
+      <h2>${number}</h2>
+    </Fragment>
+  );
 };
 
 export default ufContainer;
