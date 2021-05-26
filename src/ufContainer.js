@@ -2,7 +2,8 @@ import React, { useState, useEffect, Fragment } from 'react';
 
 const ufContainer = () => {
   const [val, setVal] = useState(0);
-  const [number, setNumber] = useState(0);
+  const [ufPrice, setUfPrice] = useState(1);
+  const [pesos, setPesos] = useState(1);
 
   useEffect(() => {
     fetch('https://mindicador.cl/api/uf')
@@ -18,15 +19,19 @@ const ufContainer = () => {
       });
   }, []);
 
-  const handleSubmit = e => {};
-
   return (
     <Fragment>
-      <form onChange={handleSubmit}>
-        <label style={{ marginRight: '2rem' }}>Calculadora UF</label>
-        <input type="text" onChange={e => setNumber(e.target.value * val)} />
+      <form>
+        <h2>Calculadora UF</h2>
+        <label style={{ marginRight: '2rem' }}>UF - Pesos Chilenos</label>
+        <input type="text" onChange={e => setUfPrice(e.target.value / val)} />
       </form>
-      <h2>${number}</h2>
+      <h2>{ufPrice.toFixed()}UF</h2>
+      <form>
+        <label style={{ marginRight: '2rem' }}>Pesos Chilenos - UF</label>
+        <input type="text" onChange={e => setPesos(e.target.value * val)} />
+      </form>
+      <h2>${pesos.toFixed()}</h2>
     </Fragment>
   );
 };
