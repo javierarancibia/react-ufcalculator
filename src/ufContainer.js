@@ -22,6 +22,7 @@ const ufContainer = () => {
   return (
     <Fragment>
       <form>
+        <h5 style={{ color: 'grey' }}>Valor uf de hoy: {val}</h5>
         <h2>Calculadora UF</h2>
         <label style={{ marginRight: '2rem' }}>UF - Pesos Chilenos</label>
         <input type="text" onChange={e => setUfPrice(e.target.value / val)} />
