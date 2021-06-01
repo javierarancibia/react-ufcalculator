@@ -24,12 +24,12 @@ const ufContainer = () => {
       <form>
         <h5 style={{ color: 'grey' }}>Valor uf de hoy: {val}</h5>
         <h2>Calculadora UF</h2>
-        <label style={{ marginRight: '2rem' }}>UF - Pesos Chilenos</label>
+        <label style={{ marginRight: '2rem' }}>Pesos Chilenos</label>
         <input type="text" onChange={e => setUfPrice(e.target.value / val)} />
       </form>
-      <h2>{ufPrice.toFixed(1)}UF</h2>
+      <h2>{ufPrice.toFixed(2)}UF</h2>
       <form>
-        <label style={{ marginRight: '2rem' }}>Pesos Chilenos - UF</label>
+        <label style={{ marginRight: '2rem' }}>UF</label>
         <input type="text" onChange={e => setPesos(e.target.value * val)} />
       </form>
       <h2>${pesos.toFixed().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}</h2>
