@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-ufcalculator/static/css/main.b8ce68e2.chunk.css",
+    "main.js": "/react-ufcalculator/static/js/main.f5a48404.chunk.js",
+    "main.js.map": "/react-ufcalculator/static/js/main.f5a48404.chunk.js.map",
+    "runtime-main.js": "/react-ufcalculator/static/js/runtime-main.689b50cc.js",
+    "runtime-main.js.map": "/react-ufcalculator/static/js/runtime-main.689b50cc.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/react-ufcalculator/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.db86580e.chunk.js": "/react-ufcalculator/static/js/2.db86580e.chunk.js",
+    "static/js/2.db86580e.chunk.js.map": "/react-ufcalculator/static/js/2.db86580e.chunk.js.map",
+    "index.html": "/react-ufcalculator/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/react-ufcalculator/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.b8ce68e2.chunk.css.map": "/react-ufcalculator/static/css/main.b8ce68e2.chunk.css.map",
+    "static/js/2.db86580e.chunk.js.LICENSE.txt": "/react-ufcalculator/static/js/2.db86580e.chunk.js.LICENSE.txt",
+    "static/media/transaction2.d37261f3.svg": "/react-ufcalculator/static/media/transaction2.d37261f3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.689b50cc.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.db86580e.chunk.js",
+    "static/css/main.b8ce68e2.chunk.css",
+    "static/js/main.f5a48404.chunk.js"
+  ]
+}
